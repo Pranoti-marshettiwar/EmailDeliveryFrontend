@@ -1,0 +1,20 @@
+<div class="suggestion-container">
+    <h2>AI-Powered Email Suggestions</h2>
+  
+    <label for="campaignDescription">Campaign Description</label>
+    <textarea
+      id="campaignDescription"
+      [(ngModel)]="campaignDescription"
+      placeholder="Enter a brief description of your campaign"
+    ></textarea>
+  
+    <button (click)="generateSuggestions()">Generate Suggestions</button>
+  
+    <div *ngIf="loading" class="loading">Generating suggestions...</div>
+  
+    <div *ngIf="suggestions" class="suggestions">
+      <h3>AI Suggestions</h3>
+      <pre>{{ suggestions }}</pre>
+    </div>
+  </div>
+  

@@ -1,0 +1,20 @@
+<div class="template-editor-container">
+  <h2>Template Editor</h2>
+  <textarea
+    [(ngModel)]="emailTemplate"
+    rows="10"
+    cols="50"
+    placeholder="Write your email template here... Use placeholders like {first_name}."
+  ></textarea>
+  <div class="actions">
+    <button *ngFor="let row of emailData; let i = index" (click)="onPreview(i)">
+      Preview with {{ row.first_name }}
+    </button>
+    <!-- <button (click)="onSaveTemplate()">Save Template</button> -->
+  </div>
+
+  <div class="preview" *ngIf="previewContent">
+    <h3>Preview</h3>
+    <p>{{ previewContent }}</p>
+  </div>
+</div>

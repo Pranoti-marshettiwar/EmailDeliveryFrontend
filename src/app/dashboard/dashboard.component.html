@@ -1,0 +1,27 @@
+
+  <div class="dashboard-container">
+    <h1>Email Campaign Creation</h1> 
+    <app-csv-upload></app-csv-upload>
+  </div>
+  <div class="dashboard">
+    <h2>Campaign Metrics Dashboard</h2>
+  
+    <div class="metrics">
+      <div class="metric">
+        <h3>Emails Sent</h3>
+        <p>{{ metrics.emailsSent }}</p>
+        <!-- <button (click)="updateMetrics('emailsSent', 1)">Increment</button> -->
+      </div>
+      <div class="metric">
+        <h3>Emails Pending</h3>
+        <p>{{ metrics.emailsPending }}</p>
+        <!-- <button (click)="updateMetrics('emailsPending', 1)">Increment</button> -->
+      </div>
+      <div class="metric">
+        <h3>Emails Failed</h3>
+        <p>{{ metrics.emailsFailed }}</p>
+        <!-- <button (click)="updateMetrics('emailsFailed', 1)">Increment</button> -->
+      </div>
+    </div>
+  </div>
+  

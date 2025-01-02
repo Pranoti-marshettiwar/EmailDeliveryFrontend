@@ -1,0 +1,25 @@
+/* src/app/csv-upload/csv-upload.component.scss */
+
+.csv-upload-container {
+    margin: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  .editor-and-suggestions {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
